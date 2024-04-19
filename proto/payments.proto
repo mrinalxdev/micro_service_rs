@@ -2,10 +2,10 @@ syntax="proto3";
 package payements;
 
 service Bitcoin {
-    rpc SendPayment (BTCPayemntRequest) returns (BTCPaymentResponse);
+    rpc SendPayment (BTCPaymentRequest) returns (BTCPaymentResponse);
 }
 
-message BTCPayemtnRequest {
+message BTCPaymentRequest {
     string from_addr = 1;
     string to_Addr = 2;
     uint32 amount = 3;
